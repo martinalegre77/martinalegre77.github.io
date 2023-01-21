@@ -37,7 +37,7 @@ header div {
 }
 
 .secciones{
-    margin: 2rem;
+    margin: 2rem 4rem 2rem 4rem;
     border-style: solid;
     border-color:dimgrey;
     border-radius: 3px;
@@ -46,7 +46,7 @@ header div {
 }
 
 #perfil{
-    margin: 3rem 2rem 2rem 2rem;
+    margin: 2rem 5em 2rem 5rem;
     font-family: 'Pavanam', 'Verdana', 'sans-serif';
     text-align: justify;
     font-size: 20px;
@@ -55,6 +55,7 @@ header div {
 #perfil h2{
     font-size: 35px;
     font-family: 'Dancing Script', 'Lucida Sans Regular', 'Lucida Grande';
+    text-align: center;
 }
 
 .nav-link:hover{
@@ -93,7 +94,7 @@ header div {
     margin-left: 2.5rem;
     display: flex;
     flex-direction: column;
-    max-width: 75%;
+    max-width: 90%;
     align-content: center;
     align-items: center;  
 }
