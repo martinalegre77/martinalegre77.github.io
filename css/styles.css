@@ -90,11 +90,12 @@ header div {
 
 #videos div{
     margin: 1rem;
+    margin-left: 4rem;
     display: flex;
     flex-direction: column;
+    max-width: 75%;
     align-content: center;
-    align-items: center;
-    max-width: 80%;  
+    align-items: center;  
 }
 
 footer{
