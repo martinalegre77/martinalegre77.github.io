@@ -90,7 +90,7 @@ header div {
 
 #videos div{
     margin: 1rem;
-    margin-left: 4rem;
+    margin-left: 2.5rem;
     display: flex;
     flex-direction: column;
     max-width: 75%;
