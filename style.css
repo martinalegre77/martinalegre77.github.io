@@ -5,6 +5,14 @@
     background-color: #f5f6f7;
 }
 
+.navbar2 {
+    display: none;
+    position: absolute; 
+    top: 0; 
+    right: 1rem; 
+    z-index: 1000; 
+}
+
 .navbar-collapse {
     align-items: center;
     justify-content: space-between;
@@ -387,9 +395,13 @@ footer {
 
 /* Adaptable/responsivo */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 760px) {
     .navbar-brand {
         display: none;
+    }
+
+    .navbar2 {
+        display: flex;
     }
 }
 
