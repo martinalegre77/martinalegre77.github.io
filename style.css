@@ -405,10 +405,6 @@ footer {
     .navbar2 {
         display: flex;
     }
-
-    .idioma {
-        display: none;
-    }
 }
 
 @media screen and (min-width: 700px) {
