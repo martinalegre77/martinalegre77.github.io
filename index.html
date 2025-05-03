@@ -1,199 +1,403 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Martin Alegre">
+    <meta name="description" content="Portfolio de Desarrollador">
+    <meta name="keywords" content="python, R, Data Analytics, tableau, web">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Martin Alegre</title>
-    <link rel="icon" href="./icons/favicon.ico">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
-    crossorigin="anonymous">
+    <!-- Titulo -->
+    <title>Martín Alegre | Data | Dev</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/icono.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Iconos de Boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Quicksand:wght@300..700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header id="header">
-        <div>
-        <p id="nombre">Luis Martin Alegre</p>  
-        <p id="descripcion">Director de Bandas</p>  
-        </div>
-    </header>
-    
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav me-auto mb-3 mb-lg-1">
-                <li class="nav-item">
-                    <a class="nav-link" href="#direccion">Dirección</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#arreglos">Arreglos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#conocimientos">Aptitudes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#videos">Videos</a>
-                </li>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+              <!-- <img src="images/imagen3.png" width="50" alt="Logo webpage"> -->
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-secondary btn-sm" type="button" onclick="cambiarIdioma('es')">Español</button>
+                <button class="btn btn-secondary btn-sm" type="button" onclick="cambiarIdioma('en')">English</button>
+              </div>
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sobre-mi" data-i18n="sobremi"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos" data-i18n="proyectos"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#certificaciones" data-i18n="educacion"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto" data-i18n="contacto"></a>
+              </li>
             </ul>
+            <!-- <form class="d-flex" role="search">
+              <button class="btn btn-outline-light" onclick="cambiarIdioma('es')">Español</button>
+              <button class="btn btn-outline-light" onclick="cambiarIdioma('en')">English</button>
+            </form> -->
+          </div>
         </div>
     </nav>
 
-    <section class="secciones">
-        <h2 id="tit-edu">Educación</h2>
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador" src="images/perfil.png" alt="Foto de Martin" >
+        <h1 data-i18n="titulo"></h1>
+        <h2 data-i18n="subtitulo"></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="images/main-image2.jpg" alt="Escritorio Analista de Datos">
+      </div>
     </section>
 
-    <section class="secciones">
-        <div id="des-edu">
-            <h5>Perito Mercantil con Orientación Contable e Impositiva (1991-1995)</h5>
-                <p>Esc de Comercio Nro 1 “Prof Gerardo Victorín” - Cdia (E.R.)</p>
-            <h5>Director de Bandas Militares - Ejército Argentino (2002-2003)</h5>
-                <p>Colegio Militar de la Nación - El Palomar (Pcia Bs As)</p>
-        </div>
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo" data-i18n="conoce"></h2>
+        <p class="seccion-texto" data-i18n="acerca1"></p>
+        <p class="seccion-texto" data-i18n="acerca2"></p>
+      </div>
     </section>
 
-    <section class="secciones">
-        <h2 id="tit-lab">Experiencia Laboral</h2>
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Data Analyst -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-file-bar-graph"></i>
+            <p class="experiencia-titulo" data-i18n="data"></p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit reiciendis nam sed hic quasi quos porro numquam quam. Consequatur officiis odio voluptas reiciendis libero.</p>
+            <div class="badges-contenedor">
+              <span class="badge bg-primary">R</span>
+              <span class="badge bg-primary">Numpy</span>
+              <span class="badge bg-primary">Pandas</span>
+              <span class="badge bg-primary">SQL</span>
+              <span class="badge bg-primary">BigQuery</span>
+              <span class="badge bg-primary">Excel</span>
+              <span class="badge bg-primary">Sheets</span>
+              <span class="badge bg-primary">Tableau</span>
+            </div>
+          </div>
+          <!-- Full Stack Python -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-filetype-py"></i>
+            <p class="experiencia-titulo">Full Stack Python</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum beatae cumque modi, necessitatibus illo suscipit in, voluptate nostrum consequuntur corrupti ipsam.</p>
+            <div class="badges-contenedor">
+              <span class="badge bg-primary">Django</span>
+              <span class="badge bg-primary">Postgres</span>
+              <span class="badge bg-primary">Mongo</span>
+              <span class="badge bg-primary">HTLM</span>
+              <span class="badge bg-primary">Javascript</span>
+              <span class="badge bg-primary">CSS</span>
+              <span class="badge bg-primary">Boostrap</span>
+              <span class="badge bg-primary">Odoo</span>
+            </div>
+          </div>
+          <!-- Ejercito -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-person-circle"></i>
+            <p class="experiencia-titulo" data-i18n="ea"></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum vitae quasi numquam dolorum, officiis nostrum. Tenetur totam, minus sapiente, sequi laudantium, sunt porro.</p>
+            <div class="badges-contenedor">
+              <span class="badge bg-primary" data-i18n="com"></span>
+              <span class="badge bg-primary" data-i18n="sol"></span>
+              <span class="badge bg-primary" data-i18n="adap"></span>
+              <span class="badge bg-primary" data-i18n="aten"></span>
+              <span class="badge bg-primary" data-i18n="hab"></span>
+              <span class="badge bg-primary" data-i18n="escucha"></span>
+              <span class="badge bg-primary" data-i18n="org"></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="secciones">
-        <div id="des-lab">
-            <h5>Regimiento de Granaderos a Caballo “Gral San Martín” (1998 - 2001)</h5>
-                <p>Músico Ejecutante - CABA</p>
-            <h5>Batallón de Ingenieros Blindado 2 (2004)</h5>
-                <p>Director de Banda - Concepción del Uruguay (E.R.)</p>
-            <h5>Liceo Militar “General San Martín” (2005 - 2007)</h5>
-                <p>Director de Banda - San Martín (Bs As)</p>
-            <h5>Escuela de Suboficiales del Ejército “Sargento Cabral” (2008 - 2011)</h5>
-                <p>Oficial Instructor - Campo de Mayo (Bs As)</p>
-            <h5>Batallón de Comunicaciones 181 “Sgto My Santiago Buratovich” (2012 - 2014)</h5>
-                <p>Director de Banda Militar - Bahía Blanca (Bs As)</p>
-            <h5>Regimiento de Infantería Mecanizado 3 “Gral Belgrano” (2015 - 2018)</h5>
-                <p>Director de Banda Militar - Pigüé (Bs As)</p>
-            <h5>Dirección de Educación Operacional (2019 - 2022)</h5>
-                <p>Director Jefe de Banda Militar - Campo de Mayo (Bs As)</p>
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro" data-i18n="tit-proy"></h2>
+      <h3 class="seccion-descripcion" data-i18n="des-proy"></h3>
+      <!-- Galeria de proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- proyecto 1 -->
+          <div class="clo-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyectos/proyecto1.png" alt="Proyecto1">
+              <div class="overley">
+                <p data-i18n="proy1"></p>
+                <div class="iconos-contenedor">
+                  <p></p>
+                  <a href="https://www.kaggle.com/code/martnalegre/bicicletas-p-blicas-caba-parte-2-an-lisis" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- proyecto 2 -->
+          <div class="clo-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyectos/proyecto2.png" alt="Proyecto2">
+              <div class="overley">
+                <p data-i18n="proy2"></p>
+                <div class="iconos-contenedor">
+                  <a href="https://public.tableau.com/app/profile/luis.martin.alegre/viz/Worldhappinessdemo_17429983540800/Dashboard2" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- proyecto 3 -->
+          <div class="clo-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyectos/proyecto3.png" alt="Proyecto3">
+              <div class="overley">
+                <p data-i18n="proy3"></p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/martinalegre77/prjclinica" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://youtu.be/jQxAEkLzGu0" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- proyecto 4 -->
+          <div class="clo-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyectos/proyecto4.png" alt="Proyecto4">
+              <div class="overley">
+                <p data-i18n="proy4"></p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/martinalegre77/consultorio" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- proyecto 5 -->
+          <div class="clo-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyectos/proyecto5.png" alt="Proyecto5">
+              <div class="overley">
+                <p data-i18n="proy5"></p>
+                <div class="iconos-contenedor">
+                  <a href="https://codepen.io/martin77dev/pen/dyxbNgx" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- proyecto 6 -->
+          <div class="clo-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyectos/proyecto6.png" alt="Proyecto6">
+              <div class="overley">
+                <p data-i18n="proy6"></p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/martinalegre77/prj-presupuesto" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      
+      <a href="https://github.com/martinalegre77?tab=repositories" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info" data-i18n="mas-proy">
+          <!-- <i class="bi bi-arrow-right-circle-fill"></i> -->
+        </button>
+      </a>
     </section>
 
-    <section class="secciones">
-        <h2 id="tit-cur">Cursos</h2>
+    <!-- Certificaciones -->
+    <section id="certificaciones" class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro" data-i18n="certificados"></h2>
+      <div class="card">
+        <div class="card-header" data-i18n="reciente">
+          
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="https://coursera.org/verify/U2NE07MHBET5" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item" data-i18n="list1"></li>
+          </a>
+          <a href="https://github.com/martinalegre77/certifications/blob/main/Module%20Development%20and%20Business%20Management%20with%20Odoo.jpeg" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item" data-i18n="list2"></li>
+          </a>
+          <a href="https://www.freecodecamp.org/espanol/certification/Martin_Alegre/data-analysis-with-python-v7" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item" data-i18n="list3"></li>
+          </a>
+          <a href="https://www.freecodecamp.org/espanol/certification/Martin_Alegre/relational-database-v8" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item" data-i18n="list4"></li>
+          </a>
+          <a href="https://www.educacionit.com/perfil/luis-martin-alegre-834002/certificado/71304?_gl=1*3iploh*_ga*ODYyMTA1NzIxLjE3NDYxNDM0Njk.*_ga_R8GR8LL2B8*MTc0NjE0MzQ2OS4xLjEuMTc0NjE0MzUwMy4yNi4wLjE4MDgyMDgyNTE." target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item" data-i18n="list5"></li>
+          </a>
+          <a href="https://www.freecodecamp.org/espanol/certification/Martin_Alegre/scientific-computing-with-python-v7" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item" data-i18n="list6"></li>
+          </a>
+        </ul>
+      </div>
+
+      <a href="https://www.linkedin.com/in/luis-martin-alegre/details/certifications/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          <span data-i18n="mas-cert"></span>
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
     </section>
 
-    <section class="secciones">
-        <div id="des-cur">
-            <h5>Curso de Capacitación “Ley Micaela - Perspectiva de Género en Acción”</h5>
-                <p>Ministerio de Defensa (Agosto - Octubre 2021)</p>
-            <h5>Curso de Derechos Humanos y Democracia para Instructores Militares</h5>
-                <p>Colegio Militar de la Nación - Ministerio de Defensa (Agosto - Octubre 2008)</p>
-            <h5>Curso Avanzado del Servicio de Bandas Militares</h5>
-                <p>Director de Banda 2do Año - Colegio Militar de la Nación (2003)</p>
-            <h5>Curso Básico del Servicio de Bandas Militares</h5>
-                <p>Director de Banda 1er Año - Colegio Militar de la Nación (2002)</p>
-
+    <!-- Skills -->
+    <section class="testimonios seccion-clara">
+      <h2 class="seccion-titulo" data-i18n="skills"></h2>
+      <h3 class="seccion-descripcion" data-i18n="sub-skills"></h3>
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen" alt="Project 1" src="images/skills/proyecto11.png" >
+              <p class="testimonio-texto" data-i18n="proy1"></p>
+              <div class="testimonio-info">
+                <p class="cliente" data-i18n="detall1"></p>
+                <p class="cargo" data-i18n="skill1"></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen" alt="Project 2" src="images/skills/proyecto22.png" >
+              <p class="testimonio-texto" data-i18n="proy2"></p>
+              <div class="testimonio-info">
+                <p class="cliente" data-i18n="detall2"></p>
+                <p class="cargo" data-i18n="skill2"></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen" alt="Project 3" src="images/skills/proyecto33.png" >
+              <p class="testimonio-texto" data-i18n="proy3"></p>
+              <div class="testimonio-info">
+                <p class="cliente" data-i18n="detall3"></p>
+                <p class="cargo" data-i18n="skill3"></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen" alt="Project 4" src="images/skills/proyecto44.png" >
+              <p class="testimonio-texto" data-i18n="proy4"></p>
+              <div class="testimonio-info">
+                <p class="cliente" data-i18n="detall4"></p>
+                <p class="cargo" data-i18n="skill4"></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen" alt="Project 5" src="images/skills/proyecto55.png" >
+              <p class="testimonio-texto" data-i18n="proy5"></p>
+              <div class="testimonio-info">
+                <p class="cliente" data-i18n="detall5"></p>
+                <p class="cargo" data-i18n="skill5"></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen" alt="Project 6" src="images/skills/proyecto66.png" >
+              <p class="testimonio-texto" data-i18n="proy6"></p>
+              <div class="testimonio-info">
+                <p class="cliente" data-i18n="detall6"></p>
+                <p class="cargo" data-i18n="skill6"></p>
+              </div>
+            </div>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
 
-    <section id="perfil">
-        <h2>Mi perfil</h2>
-        <p>
-            Soy una persona apasionada por la música, arte al cual le dediqué muchos años de estudio de manera formal y 
-            también autodidacta. Mis conocimientos se centran principalmente en los instrumentos de vientos y en la guitarra. 
-            <strong>El mayor disfrute de un director</strong>  es escuchar un arreglo hecho por él mismo, dirigiendo a un 
-            organismo musical numeroso interpretando y entendiendo su idea escrita en el pentagrama.
-        </p>
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo" data-i18n="hablemos"></div>
+            <div class="col-12 col-md-4 descripcion" data-i18n="descripcion"></div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:luismartinalegre@gmail.com">
+                <button type="button">
+                  <span data-i18n="contactame"></span>
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="container">
-        <div class="card m-2" id="direccion">
-            <p class="card-header">Dirección</p>
-            <ul class="list-group"> 
-                <li class="list-group-item">Musica militar (marchas e himnos nacionales)</li>
-                <li class="list-group-item">Musica folclórica nacional</li>
-                <li class="list-group-item">Música folclórica internacional</li>
-                <li class="list-group-item">Música académica</li>
-            </ul>
-        </div>
-        <div class="card m-2" id="arreglos">
-            <p class="card-header">Arreglos para Bandas de Música</p>
-            <ul class="list-group"> 
-                <li class="list-group-item">De música folclórica</li>
-                <li class="list-group-item">De música latina</li>
-                <li class="list-group-item">De música música folclórica internacional</li>
-                <li class="list-group-item">De música académica</li>
-            </ul>
-        </div>
-        <div class="card m-2" id="conocimientos">
-            <p class="card-header">Aptitudes</p>
-            <ul class="list-group"> 
-                <li class="list-group-item">Armonía</li>
-                <li class="list-group-item">Contrapunto</li>
-                <li class="list-group-item">Orquestación</li>
-                <li class="list-group-item">Forma Musical</li>
-                <li class="list-group-item">Acústica Musical</li>
-                <li class="list-group-item">Organología</li>
-                <li class="list-group-item">Práctica Coral</li>
-            </ul>
-        </div>
-    </section>
-
-    <aside class="container" id="videos">
-        <h5>Videos</h5>
-        <div class="ratio ratio-16x9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/220KLquBin0?start=10" 
-                title="Hello Django" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-        </div>
-        <div class="ratio ratio-16x9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/laYSPTDpal0" 
-                title="Hacer un puente" frameborder="0" allow="accelerometer; autoplay; 
-                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-        </div>
-        <div class="ratio ratio-16x9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/X7iG0Mq4pQw" 
-                title="Juan del Gualeyán" frameborder="0" allow="accelerometer; autoplay; 
-                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-        </div>
-        <div class="ratio ratio-16x9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/v8QkTaPVRl0" 
-                title="Uno - Con Nico Rodriguéz" frameborder="0" allow="accelerometer; autoplay; 
-                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-        </div>
-    </aside>
-
-    <footer>
-        <section class="social">
-            <a class="linkedin"
-                title="Seguime en linkedin"
-                href="https://linkedin.com" 
-                target="_blanck">
-            </a>
-            <a class="whatsapp"
-                title="Contactame por whatsapp"
-                href="https://web.whatsapp.com/" 
-                target="_blanck">
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="images/icono-blanco.svg" alt="Portfolio Logo">
+      <p class="footer-texto1 text-center" data-i18n="footer-texto1"></p>
+      <p class="footer-texto2 text-center" data-i18n="footer-texto2"></p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://www.linkedin.com/in/luis-martin-alegre/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
         </a>
-            <a class="youtube"
-                title="Seguime en youtube"
-                href="https://www.youtube.com/@untalmartin627/videos" 
-                target="_blanck">
+        <a href="https://github.com/martinalegre77" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
         </a>
-            <a class="github"
-                title="Seguime en github"
-                href="https://github.com" 
-                target="_blanck">
+        <a href="mailto:luismartinalegre@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
         </a>
-        </section>
-
-        <p id="copy">@legre 2023 - Todos los derechos reservados</p>
+      </div>
+      <div class="derecho-autor">
+        <span data-i18n="copy"></span><span>&#169; (2025)</span>
+      </div>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
-    crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
