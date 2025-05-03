@@ -15,6 +15,7 @@
 }
 
 .navbar-collapse {
+    margin-top: .5rem;
     align-items: center;
     justify-content: space-between;
 }
