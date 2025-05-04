@@ -7,10 +7,14 @@
         "titulo": "¡Hola! Soy Martín Alegre",
         "subtitulo": "Analista de Datos y Desarrollador Full Stack Python",
         "conoce": "Conoce a Martín",
-        "acerca1": "Soy un Licenciado en Informática con una sólida base en lenguajes de programación desde mi juventud, comenzando con Cobol y Basic. Esta pasión inicial por la tecnología me ha llevado a perfeccionarme en Python, especializándome en desarrollo web con Django y análisis de datos, utilizando herramientas como Pandas, NumPy, Matplotlib y Seaborn para generar insights valiosos.",
-        "acerca2": "Mi formación académica y experiencia práctica se complementan con 26 años de trayectoria en el Ejército Argentino, donde adquirí habilidades clave en liderazgo, gestión y administración, las cuales aplico en mi enfoque profesional para enfrentar desafíos tecnológicos con eficiencia y visión estratégica.",
-        "data": "Analisis de Datos",
+        "acerca1": "Profesional de la informática con una sólida base en lenguajes de programación (Cobol, Basic, Python) y especialización en desarrollo web (Django) y análisis de datos (Pandas, NumPy, Matplotlib, Seaborn, R, Tableau).",
+        "acerca2": "Mi perfil único se distingue por la integración de 26 años de experiencia en el Ejército Argentino, donde cultivé habilidades esenciales en comunicación, adaptación, escucha activa y habilidades de presentación.",
+        "acerca3": "Esta combinación me permite abordar proyectos tecnológicos con una visión estratégica, eficiencia y capacidad de gestión probada.",
+        "data": "Análisis de Datos",
+        "data-analisis": "Experiencia en la extracción, transformación y análisis de datos para generar insights accionables. Utilización de diversas metodologías y herramientas estadísticas y de visualización para identificar tendencias, patrones y oportunidades.",
+        "data-fullstack": "Desarrollo e implementación de soluciones web robustas y escalables utilizando el ecosistema Python. Experiencia en el ciclo completo de desarrollo, desde el frontend hasta el backend, con un enfoque en la creación de aplicaciones eficientes y centradas en el usuario.",
         "ea": "Oficial Ejército Argentino",
+        "data-ea": "26 años de servicio activo desarrollando habilidades cruciales en comunicación efectiva, adaptación a entornos dinámicos, escucha activa para la comprensión profunda y presentaciones impactantes para la transmisión clara de información y directivas.",
         "com": "Comunicación",
         "sol": "Solución de problemas",
         "adap": "Adaptación",
@@ -65,10 +69,14 @@
         "titulo": "Hello! I'm Martín Alegre",
         "subtitulo": "Data Analyst and Full Stack Python Developer",
         "conoce": "Meet Martín",
-        "acerca1": "I have a degree in Computer Science with a solid foundation in programming languages since my youth, starting with Cobol and Basic. This initial passion for technology has led me to perfect my Python skills, specializing in web development with Django and data analysis, using tools like Pandas, NumPy, Matplotlib, and Seaborn to generate valuable insights.",
-        "acerca2": "My academic training and practical experience are complemented by 26 years of experience in the Argentine Army, where I acquired key skills in leadership, management, and administration, which I apply in my professional approach to face technological challenges with efficiency and strategic vision.",
+        "acerca1": "IT Professional with a strong foundation in programming languages (Cobol, Basic, Python) and specialization in web development (Django) and data analysis (Pandas, NumPy, Matplotlib, Seaborn, R, Tableau).",
+        "acerca2": "My unique profile is distinguished by the integration of 26 years of experience in the Argentine Army, where I cultivated essential skills in communication, adaptability, active listening, and presentation abilities.",
+        "acerca3": "This combination allows me to approach technological projects with a strategic vision, efficiency, and proven management capabilities.",
         "data": "Data Analysis",
+        "data-analisis": "Experienced in extracting, transforming, and analyzing data to generate actionable insights. Proficient in utilizing various statistical and visualization methodologies and tools to identify trends, patterns, and opportunities.",
+        "data-fullstack": "Development and implementation of robust and scalable web solutions using the Python ecosystem. Experienced in the complete development lifecycle, from frontend to backend, with a focus on creating efficient and user-centric applications.",
         "ea": "Army Official",
+        "data-ea": "26 years of active service developing crucial skills in effective communication, adaptation to dynamic environments, active listening for deep understanding, and impactful presentations for clear information and directive delivery.",
         "com": "Communication",
         "sol": "Problem-solving",
         "adap": "Adaptation",
@@ -113,7 +121,6 @@
         "contactame": "Contact",
         "footer-text1": "I learn and create every day.",
         "footer-text2": "Let's create a project together.",
-        "copy": "Created by Martin Alegre"
-        
+        "copy": "Created by Martin Alegre" 
     }
 }
